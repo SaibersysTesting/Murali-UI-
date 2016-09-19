@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title></title>
+    
+   
+  </head>
+  <body>
+  <h1>append() & prepend()</h1>
+<input type="button" value="appendtext" id="btnappend"></input>
+<input type="button" value="prependtext" id="btnprepend"></input>
+<p id="p1"> 
+using jquery, it is easy to add new elements.we will look at four jquery elements that are used to add new content
+</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#btnappend").click(function(){
+$("#p1").append("</br> this is added content");
+});
+$("#btnprepend").click(function(){
+$("#p1").prepend("<b> Add elements</b>");
+});
+
+});
+
+
+</script>
+  </body>
+</html>

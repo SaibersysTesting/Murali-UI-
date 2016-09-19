@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+       <title></title>
+    
+    
+  </head>
+  <body>
+   <input type="button" value="close" id="close" />
+   <input type="button" value="Register" id="open" /><br>
+   
+  
+  <div id="div1" align="center">
+ Name<input type="text" id="name" /><br><br>
+Age<input type="text" id="age" /><br><br>
+Mail id<input type="text" id="mailid" /><br><br>
+Address<input type="text"  id="Address" /><br><br>
+<input type="button" value="submit"  id="submit"/>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#close").click(function(){
+$("#div1").hide();
+});
+});
+$(document).ready(function(){
+$("#open").click(function(){
+$("#div1").show();
+});
+});
+
+</script>
+
+  </body>
+</html>

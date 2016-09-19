@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    
+    
+  </head>
+  <body>
+  <h1> after & before</h1>
+  <input type="button" value="after"  id="btnafter"></input>
+ <input type="button" value="before"  id="btnbefore"></input>
+ 
+<p id="p1">
+using jquery, it is easy to add new elements. We will look at four jquery methods that are used to add new content.
+</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#btnafter").click(function(){
+$("#p1").after("<input type='text' placeholder='mobile'> </input>");
+});
+
+$("#btnbefore").click(function(){
+$("#p1").before("</br><input type='text' placeholder='lastname'> </input>");
+
+});
+
+});
+
+</script>
+  </body>
+</html>

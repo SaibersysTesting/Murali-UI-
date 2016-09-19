@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title></title>
+    <style>
+	h1{
+color:blue;
+alignment-adjust:central;
+	
+	 }
+	
+	</style>
+  
+  </head>
+  <body>
+  <input type="button" value="remove" id="btnremove" />
+ <input type="button" value="empty" id="btnempty"/>
+  <h1>remove & empty</h1>
+<div id="div1">
+<p>This is a paragragh with many tags They are 
+<b >bold</b>
+<strong> strong</strong>
+<i>italic</i>
+</div>
+<p>paragraph2
+
+<p class=".subp">sub paragraph</p>
+<div class=".div">sub div</div>
+</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#btnremove").click(function(){
+$("p").remove(".subp,.div");
+});
+$("#btnempty").click(function(){
+$("#div1").empty();
+});
+});
+</script>
+  </body>
+</html>

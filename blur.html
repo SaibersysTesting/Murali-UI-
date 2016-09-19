@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title></title>
+    
+   
+  </head>
+  <body>
+  <input type="text" value=""  id="txtname"/>
+    <input type="text" value=""  id="txtphone"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script>	
+	<script>
+	$(document).ready(function(){
+	$("#txtname").mouseenter(function(){
+	$("#txtname").css({'color':'grey','background-color':'#79ff4d'});
+	});
+	$("#txtname").blur(function(){
+    $("#txtname").css({'color':'white','background-color':'black'});
+		});
+		
+	});
+	</script>
+
+  </body>
+</html>

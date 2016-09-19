@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title></title>
+    <style>
+	#div1{
+height:200px;
+width:200px;
+	color:green;
+background-color:yellow;
+border:1px solid red;
+padding:20px;
+	} 
+	</style>
+    
+  </head>
+  <body>
+  <h1 style="color:green" align="center">Welcome to my page</h1>
+   <div style="float:right;"> 
+ <img src="C:\Users\s\Desktop\myimg.jpg" alt="murali"  height="300px" width="300px" </img>
+ 
+</div>
+  <div id="div1" onmouseover="changebackcolor()" onmouseout="oldstyles()"> 
+  
+  on mouse over the color of the font and background color is changed
+  </div>
+  <br>
+ Name <input type="text"  value="" id="name" placeholder="e.g.murali" /><br><br>
+ Mail-id <input type="text" value="" id="mailid" placeholder="xyz@gmail.com" /><br><br>
+ Address <input type="text" value="" id="address" placeholder=" 2250 marshlane Tx 75006" height="20px" width="20px" /><br>
+  
+  <input type="button" value="apply" onclick="apply()" />
+ 
+  <script>
+  function changebackcolor(){
+  document.getElementById("div1").style.backgroundColor="lightgrey";
+  document.getElementById("div1").style.color="pink";
+  document.getElementById("div1").style.height="400px";
+  document.getElementById("div1").style.width="400px";
+  }
+  function oldstyles(){
+  
+  document.getElementById("div1").style.backgroundColor="yellow";
+  document.getElementById("div1").style.color="green";
+  document.getElementById("div1").style.height="200px";
+  document.getElementById("div1").style.width="200px";
+  
+  
+  }
+  function apply(){
+  var pname=document.getElementById("name").innerHTML;
+  var pmailid=document.getElementById("mailid").innerHTML;
+  document.write("pname")+"\n";
+  document.write("pmailid");
+  }
+  </script>
+  </body>
+</html>

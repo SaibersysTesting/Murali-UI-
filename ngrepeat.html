@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="app2">
+  <head>
+   
+    <title></title>
+    <style>
+	table{
+border-collapse:collapse;
+
+	} 
+	tr,td,table{
+border:1px solid blue;
+color:green;
+font-family:verdana;
+font-size:length 8px;
+	 }
+	 div{
+	 color:orange;
+	 
+	 } 
+	</style>
+    
+  </head>
+  <body ng-controller="myCtrl" >
+  <input type="button" value="Display emp data" ng-click="displayempinfo()"></input>
+  <table>
+  <thead>
+  <tr>
+  <td>S.No</td>
+ <td>Name</td>
+ <td>Emailid</td>
+ <td>Phone</td>
+  </tr>
+  <!--</thead>
+  <tbody>
+  <tr ng-repeat="emp in employees">
+  <td>{{$index+1}}</td>
+  <td>{{emp.empname}}</td>
+  <td>{{emp.Email}}</td>
+  <td>{{emp.Phone}}</td>
+  </tr>
+  </tbody>-->
+   <tbody>
+  <tr ng-repeat="emp in employees">
+  <td ng-bind="$index+1"></td>
+  <td ng-bind="emp.empname"></td>
+  <td ng-bind="emp.Email"></td>
+  <td ng-bind="emp.Phone"></td>
+  </tr>
+  </tbody>
+  
+  </table></br>
+  Addition of two values :{{result}}
+  <input type="button" value="add" ng-click="addvalues()" />
+  <div >{{name}}</div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js" type="text/javascript" >
+</script>
+<script>
+var app =angular.module("app2",[]);
+app.controller("myCtrl",function($scope){
+$scope.name="Hi,murali";
+$scope.displayempinfo= function(){
+              $scope.employees=[{empname:"murali",Email:"murail@gmail.com",Phone:"3535353535"},
+                          {empname:"manoj",Email:"manoj@gmail.com",Phone:"4545454545"},
+						  {empname:"harish",Email:"harish@gmail.com",Phone:"5665665667"}];
+
+}
+$scope.addvalues= function(){
+$scope.result=10+30;
+}
+});
+</script>
+
+  </body>
+</html>

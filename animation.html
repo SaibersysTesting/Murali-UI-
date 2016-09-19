@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title></title>
+    <style>
+	#div1{
+height:200px;
+width:200px;
+padding:10px;
+border:1px solid blue;
+position:absolute;
+
+	} 
+	
+	</style>
+   
+  </head>
+  <body>
+<input type="button" value="animate" id="btnanimate" />
+<input type="button" value="Stop" id="btnstop"></input>
+<div id="div1">
+On clicking the button animation will be appllied to the div element
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#btnanimate").click(function(){
+$("#div1").animate({'height':'300px','width':'300px','left' :'600px','font-size':'20px'},6000,myfun);
+});
+$("#btnstop").click(function(){
+$("#div1").stop();
+});
+});
+function myfun(){
+alert("animation completed");
+$("#div1").css({'height':'200px','width':'200px','color':'green','position':'absolute','font-family':'cursive','padding':'10px',
+'border':'1px solid blue'});
+}
+</script>
+  </body>
+</html>

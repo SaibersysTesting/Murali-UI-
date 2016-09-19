@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title></title>
+    
+    
+  </head>
+  <body>
+<input type="button" value="Display array values" onclick="myfun()"/>
+<p id="p1"></p>
+<script>
+function myfun(){
+var myarray=[2,3,4,5,6,8];
+var arrayresult='';
+for(var index=0;index<=myarray.length;index++)
+{
+ arrayresult +=myarray[index] + ",";
+
+}
+document.getElementById("p1").innerHTML= arrayresult;
+}
+
+
+</script>
+  </body>
+</html>
