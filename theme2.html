@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#button").click(function(){
+        $("img").animate({left: '250px'},20000);
+        $("img").animate({top:'250px'},20000);
+      
+       });
+$("#btnstop").click(function(){
+        $("img").stop();
+      
+    
+    });
+});
+</script>
+<style>
+img{
+    position:absolute;
+   
+}
+
+input{
+color:#f45042;
+font-family:verdana;
+}
+
+</style>
+</head>
+<body>
+
+<img src="C:/Users/sofiawillis/Desktop/fish.jpg"  alt="fish" height="145px" width="200px" /><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<input type="button" value="start"  id="button" />
+<input type="button" value="left"   id="btnleft"/>
+<input type="button" value="down"   id="btndown" />
+<input type="button" value="Up"    id="btntop" />
+<input type="button" value="stop" id="btnstop" />
+</body>
+</html>
