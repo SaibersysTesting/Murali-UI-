@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>javascript</title>
+</head>
+<style>
+div{
+
+color:red;
+font-family:verdana;
+border:1px solid blue;
+height:200px;
+width:300px;
+
+}
+#head{
+
+color:green;
+font-family:italic;
+border:1px dotted blue;
+height:200px;
+width:300px;
+
+}
+
+</style>
+<script>
+function myfunction(){
+document.getElementById("head").style.cssText='color:yellow; background-color:green;border:1px solid black;float:left 200px';
+document.getElementById("head").innerHTML="This is a changed heading ";
+
+
+}
+
+</script>
+
+
+<body> 
+
+
+<h1 id="head">This is a heading</h1>
+
+
+<div>This is a div element</div><br>
+
+
+<input style="color:blue" type="button"  value="click here to see" onclick="myfunction()" />
+
+
+</body>
+</html>
