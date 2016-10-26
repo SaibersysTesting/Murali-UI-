@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Angular spa</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+#menu{
+    padding-left: 25px;
+    padding-top: 25px;
+   
+}
+ul{
+
+    text-align:center;
+}
+
+</style>
+
+</head>
+<body  >
+<div class="container">
+  
+  <ul class="pagination">
+    <li><a href="#/" style="background-color:#e5f442">Home</a></li>
+    <li><a href="#services" style="background-color:#e5f442">Services</a></li>
+    <li><a href="#products"style="background-color:#e5f442">Products</a></li>
+    <li><a href="#contact"style="background-color:#e5f442">Contact Us</a></li>
+    <li><a href="#help"style="background-color:#e5f442">Help</a></li>
+  </ul>
+</div>
+
+
+<div ng-view></div>
+
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "home.htm"
+    })
+    .when("/services", {
+        templateUrl : "services.htm"
+    })
+    .when("/products", {
+        templateUrl : "product.htm"
+    })
+    .when("/contact", {
+        templateUrl : "contact.htm"
+    })
+    .when("/help", {
+        templateUrl : "help.htm"
+    });
+});
+</script>
+
+</body>
+</html>
+
