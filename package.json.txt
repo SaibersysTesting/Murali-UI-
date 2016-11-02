@@ -1,0 +1,19 @@
+{
+  "name": "reacttutorials",
+  "version": "1.0.0",
+  "main": "wepack.config.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot"
+  },
+  "author": "murali",
+  "license": "ISC",
+  "dependencies": {
+
+     
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+       },
+  "description": ""
+}
