@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="button" value="clickme" onclick="multiplication()" />
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+
+ var p=6;
+ var x=10;
+function multiplication() {
+   var p = 5;
+document.getElementById("demo").innerHTML= "local variable: "+p*p;   
+	document.getElementById("demo2").innerHTML="Accessing global variable from into local scope" +x;
+}
+var q=p+p;
+document.getElementById("demo1").innerHTML="global variable:"+q;
+</script>
+
+
+</body>
+</html>

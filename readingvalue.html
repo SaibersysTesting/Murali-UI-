@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>reading a value</title>
+<script type="text/javascript">
+function substitute(){
+
+var input1=document.getElementById("myvalue").value;
+if(input1.length == 0)
+{
+alert('please enter a input value');
+return;
+}
+document.getElementById("mytitle").innerHTML="Hello.. again"
+}
+
+
+</script>
+
+
+
+</head>
+<body>
+<h1 id="mytitle">Javascript example</h1>
+Enter a value<input type="text" id="myvalue" />
+<input type="button" value="submit" onclick="substitute()"/>
+
+</body>
+
+
+</html>

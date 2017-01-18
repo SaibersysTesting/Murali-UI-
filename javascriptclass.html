@@ -1,0 +1,47 @@
+<html>
+<head>
+<title> javascript example</title>
+<script>
+
+class Polygon {
+  constructor(height, width) {
+    this.name = 'Polygon';
+    this.height = height;
+    this.width = width;
+  }
+  
+}
+
+class Square extends Polygon {
+  constructor(length) {
+    super(length, length);
+    this.name = 'Square';
+  }
+}
+//creating object
+var rectangle= new Square();
+document.write(Square.name);
+   rectangle.name="rectangle";
+   //wrote extra variable to rectangle
+   rectangle.height=100;
+   rectangle.color="red";
+   document.write("\t"+rectangle.name);
+   document.write("\t"+rectangle.height);
+   document.write("\t"+rectangle.color);
+   
+  
+   
+  
+   
+   
+   
+</script>
+
+
+
+</head>
+<h1>javascript example</h1>
+</body>
+
+
+</html>

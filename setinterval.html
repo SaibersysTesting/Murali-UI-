@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A script on this page starts this clock:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+
+var p=setInterval(murali,10000);
+function murali(){
+var krishna= "mahesh";
+document.getElementById("demo1").innerHTML= krishna;
+
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Self invoking function</h1>
+
+<p id="demo2"></p>
+
+<script>
+var p=5;
+var q=10;
+
+(function () {
+    document.getElementById("demo2").innerHTML = "Helllo";
+})();
+
+(function () {
+    
+	var sum=p+q;
+	document.write("sum:"+sum);
+})();
+
+
+</script>
+
+</body>
+</html>

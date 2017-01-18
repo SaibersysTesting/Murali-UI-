@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+//created a constructor
+function person(firstName,lastName,age,eyeColor) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+    //method inside a class
+    this.changeName = function (name) {
+        this.lastName = name;
+    }
+    this.changeColor=function(color){
+        this.eyeColor=color;
+    }
+}
+var myMother = new person("Sally","Rally",48,"green");
+myMother.changeName("Doe");
+myMother.changeColor("brown");
+document.getElementById("demo").innerHTML =
+"My mother's last name is " + myMother.lastName;
+document.getElementById("demo1").innerHTML =
+"My mother eyes color is " + myMother.eyeColor;
+
+
+</script>
+
+</body>
+</html>
