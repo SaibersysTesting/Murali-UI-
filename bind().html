@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+var obj={num:2};
+
+var addToThis= function(a,b,c){
+
+return this.num+a+b+c;
+
+};
+//assigning object to the function 
+var bound=addToThis.bind(obj);
+// calling the function
+ console.log(bound(1,2,3));
+
+
+</script>
+
+</head>
+<body>
+<h1>Check console to see output</h1>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>promise1</title>
+<script>
+ function addition(a,b){
+ 
+ return  a+b;
+ }
+ 
+ var promise= new Promise(function(fulfill,reject){
+ 
+ var p= addition(3,4);
+ if(p===5){
+ 
+ fulfill(p);
+ }else{
+ reject(p);
+ }
+ });
+promise.then(function(value){
+console.log("The fulfilled promise value:"+value+".");
+
+},function(value){
+
+console.log("The rejected value:"+value+".");
+
+});
+
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+
+
+</html>
